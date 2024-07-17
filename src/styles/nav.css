@@ -1,0 +1,52 @@
+
+.nav-hidden {
+transform: translateY(-80px);
+transition: transform 0.8s ease-in-out; 
+}
+.container {
+width: 95vw;
+}
+
+.hover-lines {
+position: relative;
+text-decoration: none;
+}
+
+.hover-lines::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+border-radius: 2px;
+background-color: #77B523;
+top: 1.5rem;
+left: 0;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .3s ease-in-out;
+}
+
+.hover-lines:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}
+
+
+.hover\:wiggle:hover .phone {
+    animation: wiggle 0.25s ease-in-out infinite;
+    }
+
+    @keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    }

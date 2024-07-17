@@ -1,16 +1,529 @@
 ---
-
+import Layout from '../layouts/Layout.astro'
+import '../styles/app.css'
+import '../utils.ts'
+import '../styles/carousel.css'
+import '../styles/testimonials.css'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Home page title" description="Trusted Electrician and Data Solutions Expert in Oakleigh, Serving All of Melbourne. We provided Safe Installations, Repairs, and Upgrades."> 
+  <section class="h-screen bg-[url('../images/background.jpg')] bg-cover bg-top">
+    <div class="absolute bg-black bg-opacity-40 h-full w-full"></div>
+    <div class="container pt-[30vh] relative z-10 xl:pt-[35vh]">
+      <p class="font-deco text-[#77B523] mb-2 text-sm font-bold clip-in">Residential & Commercial & Industrial Electrician </p>
+      <h1 class="font-heading text-white text-3xl font-bold mb-4 xl:text-5xl xl:w-[60%] fade-in-up leading-7">Trusted Electrician and Data Solutions Expert in Oakleigh, Serving All of Melbourne</h1>
+      <p class="text-white mb-14 xl:text-lg xl:w-[60%] fade-in">Trust Our Skilled Residential Electrical Contractors in Melbourne for Safe Installations, Repairs, and Upgrades</p>
+      <button class="call-to-action-btn"><a class="bg-[#77B523] py-3 px-3 rounded-xl text-white hover:bg-[#141E05] hover:border-2 hover:border-[#77B523] duration-300 fade-in" href="#">Request a free quote</a></button>
+    </div>
+  </section>
+  <section class="bg-[#141E05] rounded-b-[2rem] py-12 xl:py-20">
+    <div class="container xl:flex justify-between gap-16">
+      <div class="mb-10 xl:w-[80%] fade-in-up">
+        <p class="font-deco text-sm font-thin text-[#77B523] mb-2 clip-in">Available 24/7</p>
+        <h4 class="font-heading text-white font-bold text-2xl leading-7 xl:text-4xl">Reliable, Professional & Friendly Service</h4>
+      </div>
+      <div>
+        <div class="fade-in-up">
+          <p class="text-[#77B523] text-lg inline-block font-bold mb-6">5/5 Stars</p><a class="text-white text-lg" href="https://www.google.com/search?q=harrington+electrical&rlz=1C1UEAD_enAU1008AU1009&oq=harrington&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIQCAEQLhiDARixAxjJAxiABDIGCAIQRRhAMhAIAxAuGK8BGMcBGIAEGI4FMgoIBBAuGLEDGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEIMjU2OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x6ad617235bfcf881:0xd69ae190b95683d8,1,,,,"> | Google Reviews</a>
+        </div>
+        <p class="text-white mb-4 font-thin fade-in-up">“Professional, knowledgeable, responsible and hard worker, Jack is what you are looking for in an electrician to trust the work in your house. His work is exceptional and I can’t recommend him enough.”</p>
+        <p class="font-deco text-[#77B523] clip-in">Johnny Gallardo</p>
+      </div>
+    </div>
+  </section>
+  <section class="my-16 xl:my-20 relative">
+    <img src="../images/group-1.svg" class="absolute left-[0%] top-[0%] right-auto bottom-auto -z-30" alt="">
+    <div class="container xl:pl-[30%]">
+      <p class="font-deco text-sm font-thin text-[#77B523] mb-2 clip-in">Residential</p>
+      <h2 class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4 xl:text-4xl fade-in-up">Safe & Affordable Residential Electrician Services Throughout Melbourne</h2>
+      <p class="text-[#141E05] mb-10 fade-in-up">We provide a complete range of domestic electrical services for home-owners and landlords. From power points and LED lights, to switchboard upgrades and complete home rewiring, you can be sure of professional, high quality workmanship from an electrician Melbourne people trust.</p>
+      <div class="mb-10 xl:grid xl:grid-cols-2 xl:gap-1 fade-in-up">
+        <div class="flex uppercase border-[#141E05] bg-white border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">TENANCY SAFETY CHECKS</p>
+        </div>
+        <div class="flex bg-white uppercase border-[#141E05]  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">HOME WIRING & REWIRING</p>
+        </div>
+        <div class="flex bg-white uppercase border-[#141E05]  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">RCD Safety Switches</p>
+        </div>
+        <div class="flex bg-white uppercase border-[#141E05]  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">Switchboard Upgrades</p>
+        </div>
+        <div class="flex bg-white uppercase border-[#141E05]  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">L.E.D Lighting</p>
+        </div>
+        <div class="flex bg-white uppercase border-[#141E05]  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">USB Power Points</p>
+        </div>
+      </div>
+      <a class="bg-[#77B523] py-3 px-6 rounded-xl text-white font-deco text-sm hover:bg-[#141E05] hover:border-2 hover:border-[#77B523] duration-300 fade-in" href="#">View All Residential Services</a>
+    </div>
+  </section>
+  <section class="py-16 xl:py-20 bg-[#141E05] rounded-[2rem] relative z-0">
+    <img src="../images/group-3.svg" class="absolute right-[0%] top-[0%] left-auto bottom-auto -z-10 fade-in" alt="">
+    <div class="container xl:pr-[30%]">
+      <p class="font-deco text-sm font-thin text-[#77B523] mb-2 clip-in">Commercial</p>
+      <h2 class="font-heading text-white font-bold text-2xl leading-6 mb-4 xl:text-4xl fade-in-up">Consistent & Reliable Commercial Electrical Services Melbourne</h2>
+      <p class="text-white mb-10 fade-in-up">We offer services to commercial & industrial  properties. Our expertise includes Single Phase 230V and Three Phase 400V installations. Whether it’s New Build Constructions, Renovations, or Alterations, we can provide the electrical services you need.</p>
+      <div class="mb-10 xl:grid xl:grid-cols-2 xl:gap-1 fade-in-up">
+        <div class="flex border-white bg-white uppercase border-2 rounded-2xl px-4 py-2 mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">Office fit outs</p>
+        </div>
+        <div class="flex border-white bg-white uppercase  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">Data Points</p>
+        </div>
+        <div class="flex border-white bg-white uppercase  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">Security & CCTV</p>
+        </div>
+        <div class="flex border-white bg-white uppercase  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">Testing and tagging</p>
+        </div>
+        <div class="flex border-white bg-white uppercase  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">factory fit-outs</p>
+        </div>
+        <div class="flex border-white bg-white uppercase  border-2 rounded-2xl px-4 py-2  mb-2 xl:mr-6">
+          <img class="w-10 mr-6" src="../images/glove.png" alt="">
+          <p class="font-bold content-center">Telecommunications</p>
+        </div>
+      </div>
+      <a class="magnetic-button bg-[#77B523] py-3 px-6 rounded-xl text-white font-deco text-sm hover:bg-[#141E05] hover:border-2 hover:border-[#77B523] duration-300 fade-in" href="#">View All Commercial Services</a>
+    </div>
+  </section>
+  <section id="about-us" class="py-20 xl:py-28">
+    <div class="container">
+      <div class="xl:flex xl:flex-row-reverse xl:gap-36">
+        <img class="hidden xl:block xl:w-[40%] fade-in-up" src="../images/pool.webp" alt="Residential Room Electrician Work">
+        <div>
+          <p class="font-deco text-sm font-thin text-[#77B523] mb-2 clip-in">Harrington Electrical & Data Solutions</p>
+          <h2  class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4 xl:text-4xl fade-in">About Us</h2>
+          <img class="xl:hidden mb-4 fade-in-up" src="../images/pool.webp" alt="Residential Room Electrician Work">
+          <p class="mb-10 fade-in-up">At Harrington Electrical & Data Solutions, we are committed to providing top-quality electrical services throughout Melbourne. Fully licensed, insured, and registered (REC-28677), we pride ourselves on delivering genuine quality work at affordable prices. We stand by our promise to beat any written quote, ensuring you get the best value for your money.</p>
+          <a class="bg-[#77B523] py-3 px-6 rounded-xl text-white font-deco text-sm hover:bg-[#141E05] hover:border-2 hover:border-[#77B523] duration-300 fade-in" href="#">Request a free quote today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="bg-[#ECF2EC] py-12 w-[95vw] m-auto rounded-2xl xl:pl-[30%] relative fade-in-up">
+      <img src="../images/group-4.svg" class="absolute left-[0%] top-[0%] right-auto bottom-auto hidden xl:block" alt="">
+      <div class="w-[90%] m-auto fade-in-up">
+        <h2 class="font-deco text-sm font-thin text-[#77B523] mb-6 clip-in">Why Choose Us?</h2>
+        <div class="mb-8 border-b border-[#141E05] border-opacity-30">
+          <h3 class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4">Certified Expertise:</h3>
+          <p class="mb-8">Our team is composed of fully licensed and certified electricians, always up-to-date with the latest qualifications. We provide Electrical Certificate of Safety (ECO) certificates for all our work.</p>
+        </div>
+        <div class="mb-8 border-b border-[#141E05] border-opacity-30">
+          <h3 class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4">Quality Assurance:</h3>
+          <p class="mb-8">We use only reputable brands like Clipsal, NHP, and Hager to ensure the highest quality in all our projects.</p>
+        </div>
+        <div class="mb-8 border-b border-[#141E05] border-opacity-30">
+          <h3 class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4">Comprehensive Services:</h3>
+          <p class="mb-8">From general lighting and power solutions to advanced data networking and security systems, we handle it all. Whether it’s a simple power upgrade or a complete house rewire, our services cover a wide range of electrical and data needs.</p>
+        </div>
+        <div class="mb-8 border-b border-[#141E05] border-opacity-30">
+          <h3 class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4">Customer Commitment:</h3>
+          <p class="mb-8">Your satisfaction is our top priority. We take pride in completing work promptly and to the highest standard. Flexible callouts, including weekends and after-hours services, ensure we’re available when you need us.</p>
+        </div>
+        <div class="mb-8 border-b border-[#141E05] border-opacity-30">
+          <h3 class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4">Wide Reach:</h3>
+          <p class="mb-8">Based in the South East Suburbs, we serve clients all over Melbourne by appointment, providing reliable, professional, and friendly service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-12 xl:my-36">
+    <div class="container relative">
+      <div class="w-[80%] xl:w-[60%] m-auto">
+        <p class="font-deco text-sm font-thin text-[#77B523] mb-2 text-center clip-in">Customer Reviews</p>
+        <h2 class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4 text-center w-[80%] m-auto xl:text-4xl xl:mb-2 fade-in-up">
+          What our clients say about us
+        </h2>
+        <div class="testimonial-carousel fade-in-up">
+          <div class="testimonial-item active-testimonial">
+            <p class="text-center mb-4">Very happy with Jack and the work we got done. Turned around a quote quickly and we were able to book it in shortly afterwards. Had great comms and the workmanship was excellent. Got an EV charger, several fans, and a new powerpoint installed. Would highly recommend Harrington Electrical.</p>
+            <p class="font-deco text-sm font-thin text-[#77B523] mb-2 text-center">Ettienne Gous</p>
+          </div>
+          <div class="testimonial-item">
+            <p class="text-center mb-4">Jack was amazing! He was punctual, professional and nothing was too difficult. I can't recommend Jack highly enough.  It is great to have a hard working honest, friendly electrician making everything just right in your home.</p>
+            <p class="font-deco text-sm font-thin text-[#77B523] mb-2 text-center">Diane Alice</p>
+          </div>
+          <div class="testimonial-item">
+            <p class="text-center mb-4">Professional, knowledgeable, responsible and hard worker, Jack is what you are looking for in an electrician to trust the work in your house. His work is exceptional and I can’t recommend him enough. The job is never too small or never too difficult, always “a can do” attitude which is exactly what I was looking for.</p>
+            <p class="font-deco text-sm font-thin text-[#77B523] mb-2 text-center">Johnny Gallardo</p>
+          </div>
+          <!-- Add more testimonials as needed -->
+        </div>
+        <div class="testimonial-pagination fade-in-up">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <!-- Add more dots as needed -->
+        </div>
+      </div>
+      <div class="testimonial-controls fade-in-up xl:absolute xl:w-full">
+        <button class="prev-arrow"><img src="../images/left-arrow.svg" class="h-5" alt=""></button>
+        <button class="next-arrow"><img src="../images/right-arrow.svg" class="h-5" alt=""></button>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="contact" class="py-16 bg-[#141E05] rounded-[2rem] relative z-0 fade-in-up">
+    <img src="../images/group-4.svg" class="absolute left-[0%] top-[0%] right-auto bottom-auto -z-10" alt="">
+    <div class="container xl:pl-[30%]">
+      <p class="font-deco text-sm font-thin text-[#77B523] mb- clip-in">Fast free quote</p>
+      <h3 class="font-heading text-white font-bold text-2xl leading-6 mb-4 xl:text-4xl fade-in-up">Request a quote</h3>
+      <p class="text-white mb-8">Need professional electrical services? Just fill out the form below with your specific needs, and we'll take care of the rest.</p>
+      <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
+        <input name="bot-field" class="hidden" type="text">
+        <input type="text" name="name" id="name" placeholder="Name" class="block w-full mb-4 py-2 px-2 rounded-md fade-in-up  focus:outline-none " required>
+        <input type="email" name="email" id="email" placeholder="Email" class="block w-full mb-4 py-2 px-2 rounded-md fade-in-up  focus:outline-none" required>
+        <input type="tel" name="tel" id="tel" placeholder="Phone number" class="block w-full mb-4 py-2 px-2 rounded-md fade-in-up  focus:outline-none" required>
+        <input type="text" name="location" id="location" placeholder="Location" class="block w-full mb-4 py-2 px-2 rounded-md fade-in-up  focus:outline-none" required>
+        <textarea name="message" id="message" placeholder="Job details" class="block w-full mb-8 py-2 px-2 rounded-md fade-in-up  focus:outline-none h-[150px]" required></textarea>
+        <button class="bg-[#77B523] py-3 px-6 rounded-xl text-white font-deco text-sm hover:bg-[#141E05] hover:border-2 hover:border-[#77B523] duration-300 fade-in " type="submit">Send quote request</button>
+      </form>
+    </div>
+  </section>
+  <section class="my-12 xl:my-32">
+    <div class="container">
+      <p class="font-deco text-sm font-thin text-[#77B523] mb-2 text-center clip-in">High quality products</p>
+      <h3 class="font-heading text-[#141E05] font-bold text-2xl leading-6 mb-4 text-center xl:text-4xl xl:mb-10 fade-in-up">Brands We Recommend and Install</h3>
+      <p class="text-center xl:w-[60%] xl: m-auto fade-in-up">We work exclusively with parts from recognized industry leaders. All parts and products are backed by the manufacturer’s warranty, and our services include a 12-month labor guarantee. Customer service is our top priority, and we stand by our workmanship. The job isn’t done until you are completely satisfied.</p>
+    </div>
+</section>
+<section class="image-section">
+  <div class="second-loop-container">
+      <div class="images-wrapper">
+          <div class="image-container"><img src="../images/nhp-logo.png" alt="" class="image-class"></div>
+          <div class="image-container"><img src="../images/clipsal.png" alt="" class="image-class"></div>
+          <div class="image-container"><img src="../images/hager.png" alt="" class="image-class"></div>
+          <div class="image-container"><img src="../images/voltex.png" alt="" class="image-class"></div>
+      </div>
+      <div class="images-wrapper">
+          <div class="image-container"><img src="../images/nhp-logo.png" alt="" class="image-class"></div>
+          <div class="image-container"><img src="../images/clipsal.png" alt="" class="image-class"></div>
+          <div class="image-container"><img src="../images/hager.png" alt="" class="image-class"></div>
+          <div class="image-container"><img src="../images/voltex.png" alt="" class="image-class"></div>
+      </div>
+  </div>
+</section>
+</Layout>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Utility
+  const lerp = (current: number, target: number, factor: number): number => {
+    return current * (1 - factor) + target * factor;
+  };
+
+  interface MousePosition {
+    x: number;
+    y: number;
+  }
+
+  let mousePosition: MousePosition = { x: 0, y: 0 };
+  window.addEventListener('mousemove', (e: MouseEvent) => {
+    mousePosition.x = e.pageX;
+    mousePosition.y = e.pageY;
+  });
+
+  // Calculate distance between 2 points
+  const calculateDistance = (x1: number, y1: number, x2: number, y2: number): number => {
+    return Math.hypot(x1 - x2, y1 - y2);
+  };
+
+  class MagneticObject {
+    private domElement: HTMLElement;
+    private boundingClientRect: DOMRect;
+    private triggerArea: number;
+    private interpolationFactor: number;
+    private lerpingData: {
+      x: { current: number; target: number };
+      y: { current: number; target: number };
+    };
+
+    constructor(domElement: HTMLElement) {
+      this.domElement = domElement;
+      this.boundingClientRect = this.domElement.getBoundingClientRect();
+      this.triggerArea = 200;
+      this.interpolationFactor = 0.8;
+
+      this.lerpingData = {
+        x: { current: 0, target: 0 },
+        y: { current: 0, target: 0 },
+      };
+
+      this.resize();
+      this.render();
+    }
+
+    private resize() {
+      window.addEventListener("resize", () => {
+        this.boundingClientRect = this.domElement.getBoundingClientRect();
+      });
+    }
+
+    private render() {
+      const distanceFromMouseToCenter = calculateDistance(
+        mousePosition.x,
+        mousePosition.y,
+        this.boundingClientRect.left + this.boundingClientRect.width / 2,
+        this.boundingClientRect.top + this.boundingClientRect.height / 2
+      );
+
+      let targetHolder = { x: 0, y: 0 };
+      if (distanceFromMouseToCenter < this.triggerArea) {
+        this.domElement.classList.add("focus");
+        targetHolder.x = (mousePosition.x - (this.boundingClientRect.left + this.boundingClientRect.width / 2)) * 0.3;
+        targetHolder.y = (mousePosition.y - (this.boundingClientRect.top + this.boundingClientRect.height / 2)) * 0.3;
+      } else {
+        this.domElement.classList.remove("focus");
+      }
+      this.lerpingData.x.target = targetHolder.x;
+      this.lerpingData.y.target = targetHolder.y;
+
+      for (const item in this.lerpingData) {
+        if (this.lerpingData.hasOwnProperty(item)) {
+          this.lerpingData[item as "x" | "y"].current = lerp(
+            this.lerpingData[item as "x" | "y"].current,
+            this.lerpingData[item as "x" | "y"].target,
+            this.interpolationFactor
+          );
+        }
+      }
+
+      this.domElement.style.transform = `translate(${this.lerpingData.x.current}px, ${this.lerpingData.y.current}px)`;
+
+      window.requestAnimationFrame(() => this.render());
+    }
+  }
+
+  const buttons = document.querySelectorAll(".call-to-action-btn");
+  if (buttons.length > 0) {
+    buttons.forEach(button => {
+      if (button instanceof HTMLElement) {
+        new MagneticObject(button);
+      }
+    });
+  } else {
+    console.error('Buttons with class "call-to-action-btn" not found.');
+  }
+});
+
+
+// Utility function for linear interpolation
+
+
+// image
+interface Lerp {
+  current: number;
+  target: number;
+  ease: number;
+}
+
+class LoopingElement {
+  private element: HTMLElement;
+  private currentTranslation: number;
+  private speed: number;
+  private metric: number;
+  private direction: boolean;
+  private scrollTop: number;
+  private lerp: Lerp;
+
+  constructor(element: HTMLElement, currentTranslation: number, speed: number) {
+    this.element = element;
+    this.currentTranslation = currentTranslation;
+    this.speed = speed;
+    this.metric = 100;
+    this.direction = true;
+    this.scrollTop = 0;
+
+    this.lerp = {
+      current: this.currentTranslation,
+      target: this.currentTranslation,
+      ease: 0.1,
+    };
+
+    this.events();
+    this.render();
+  }
+
+  private events() {
+    window.addEventListener('scroll', () => {
+      const direction = window.pageYOffset;
+      if (direction > this.scrollTop) {
+        this.direction = true;
+        this.lerp.target += this.speed * 5;
+      } else {
+        this.direction = false;
+        this.lerp.target -= this.speed * 5;
+      }
+      this.scrollTop = direction <= 0 ? 0 : direction;
+    });
+  }
+
+  private lerpFunc(current: number, target: number, ease: number) {
+    this.lerp.current = current * (1 - ease) + target * ease;
+  }
+
+  private right() {
+    this.lerp.target += this.speed;
+    if (this.lerp.target > this.metric) {
+      this.lerp.current -= this.metric * 2;
+      this.lerp.target -= this.metric * 2;
+    }
+  }
+
+  private left() {
+    this.lerp.target -= this.speed;
+    if (this.lerp.target < -this.metric) {
+      this.lerp.current += this.metric * 2;
+      this.lerp.target += this.metric * 2;
+    }
+  }
+
+  private animate() {
+    this.lerpFunc(this.lerp.current, this.lerp.target, this.lerp.ease);
+    this.element.style.transform = `translateX(${this.lerp.current}%)`;
+  }
+
+  private render() {
+    this.direction ? this.right() : this.left();
+    this.animate();
+    window.requestAnimationFrame(() => this.render());
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll<HTMLElement>('.item');
+  elements.forEach((element, index) => {
+    new LoopingElement(element, index % 2 === 0 ? 0 : -100, 0.1);
+  });
+
+  const imagesArray = document.querySelectorAll<HTMLElement>('.images-wrapper');
+  imagesArray.forEach((image, index) => {
+    new LoopingElement(image, index % 2 === 0 ? 0 : -100, 0.1);
+  });
+});
+
+
+// Testimonial Code
+
+class TestimonialCarousel {
+  private currentIndex: number = 0;
+  private items: NodeListOf<HTMLElement>;
+  private dots: NodeListOf<HTMLElement>;
+  private transitioning: boolean = false;
+
+  constructor() {
+    this.items = document.querySelectorAll('.testimonial-item');
+    this.dots = document.querySelectorAll('.dot');
+    this.showItem(this.currentIndex);
+
+    document.querySelector('.prev-arrow')?.addEventListener('click', () => this.prevItem());
+    document.querySelector('.next-arrow')?.addEventListener('click', () => this.nextItem());
+    this.dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => this.showItem(index));
+    });
+  }
+
+  private showItem(index: number) {
+    if (this.transitioning) return;
+    this.transitioning = true;
+
+    const currentItem = this.items[this.currentIndex];
+    const nextItem = this.items[index];
+
+    currentItem.classList.remove('active-testimonial', 'fade-in-testimonial');
+    currentItem.classList.add('fade-out-testimonial');
+
+    nextItem.classList.add('active-testimonial', 'fade-in-testimonial');
+
+    setTimeout(() => {
+      currentItem.classList.remove('fade-out-testimonial');
+      this.transitioning = false;
+    }, 500);
+
+    this.dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+    this.currentIndex = index;
+  }
+
+  private prevItem() {
+    const index = (this.currentIndex - 1 + this.items.length) % this.items.length;
+    this.showItem(index);
+  }
+
+  private nextItem() {
+    const index = (this.currentIndex + 1) % this.items.length;
+    this.showItem(index);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  new TestimonialCarousel();
+});
+
+// Text Animations
+
+//  FADE IN 
+document.addEventListener('DOMContentLoaded', () => {
+  const faders: NodeListOf<HTMLElement> = document.querySelectorAll(".fade-in");
+  const fadeUp: NodeListOf<HTMLElement> = document.querySelectorAll(".fade-in-up");
+  const fadeInLeft: NodeListOf<HTMLElement> = document.querySelectorAll(".fade-in-left");
+  const fadeInRight: NodeListOf<HTMLElement> = document.querySelectorAll(".fade-in-right");
+  const clipIn: NodeListOf<HTMLElement> = document.querySelectorAll(".clip-in");
+
+  const appearOnScrollOptions: IntersectionObserverInit = {
+    threshold: 0,
+    rootMargin: "0px 0px 0px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, appearOnScrollOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  fadeUp.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  fadeInLeft.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  fadeInRight.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  clipIn.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});
+
+</script>
+
+
+

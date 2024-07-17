@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro'
+import '../styles/app.css'
+import '../utils.ts'
+import '../styles/nav.css'
+---
+
+<Layout title="Quote request recieved" description="You have succesfully send us a quote request"> 
+    <section class="bg-[#141E05] h-screen relative pt-48 xl:pt-[17%]">
+        <img src="../images/group-4.svg" class="absolute left-[0%] top-[0%] right-auto bottom-auto" alt="">
+        <div class="container xl:pl-[30%]">
+            <p class="font-deco text-sm font-thin text-[#77B523] mb- clip-in">Success</p>
+            <h3 class="font-heading text-white font-bold text-2xl leading-6 mb-4 xl:text-4xl fade-in-up">Quote request sent!</h3>
+            <p class="text-white mb-8 fade-in xl:w-[60%]">Thank you for your quote request! We'll review your information and get back to you shortly. If you have any <span class="text-[#77B523] font-bold">immediate emergencies</span>, please don't hesitate to call us.</p>
+            <a class="fade-in-up hover:bg-[#77B523] hover:scale-[1.02] transition-all py-3 border-[#FFFFFF] flex justify-between border-2 border-opacity-40 border-solid px-4 rounded-md text-white hover:wiggle w-36 xl:hidden mb-10" href="tel:+61425 685 486"><img class="pr-2 phone" src="/images/phone.svg" alt="phone icon"><h3 class="text-sm font-body text-light">0425 685 486</h3></a>
+            <a class="bg-[#77B523] py-3 px-6 rounded-xl text-white font-deco text-sm hover:bg-[#141E05] hover:border-2 hover:border-[#77B523] duration-300 fade-in" href="/">Return to Home Page</a>
+        </div>
+    </section>
+</Layout>
+
+<script>
+
+    // Text Animations
+
+//  FADE IN 
+document.addEventListener('DOMContentLoaded', () => {
+  const faders: NodeListOf<HTMLElement> = document.querySelectorAll(".fade-in");
+  const fadeUp: NodeListOf<HTMLElement> = document.querySelectorAll(".fade-in-up");
+  const fadeInLeft: NodeListOf<HTMLElement> = document.querySelectorAll(".fade-in-left");
+  const fadeInRight: NodeListOf<HTMLElement> = document.querySelectorAll(".fade-in-right");
+  const clipIn: NodeListOf<HTMLElement> = document.querySelectorAll(".clip-in");
+
+  const appearOnScrollOptions: IntersectionObserverInit = {
+    threshold: 0,
+    rootMargin: "0px 0px 0px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, appearOnScrollOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  fadeUp.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  fadeInLeft.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  fadeInRight.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+
+  clipIn.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});
+</script>

@@ -1,0 +1,70 @@
+---
+import '../styles/app.css'
+import '../styles/nav.css'
+import { Image } from "astro:assets";
+import logo from '../images/logo1.png';
+---
+<footer class="bg-[#141E05] text-white w-full pt-12">
+  <div class="m-auto container">             
+    <Image src={logo} class="w-40 mb-10" alt="Harrington Electrical & Data Solutions Logo" />
+    <div class="top-footer xl:flex justify-between border-b pb-12 border-opacity-40 border-white  xl:pb-0">
+      <div class="font-deco mb-12 xl:mb-0">
+        <h5 class="text-xl mb-4">Contact</h5>
+        <div class="text-[#77B523] text-sm">
+          <p class="mb-6 w-[80%]">Old Eastern Ct, Oakleigh South VIC 3167</p>
+          <div class="mb-6">
+            <a href="tel:+61425 685 486" class="block">P: +61425 685 486</a>
+            <a href="mailto:info@harringtonelecdata.com">E: info@harringtonelecdata.com</a>
+          </div>
+          <a href="https://www.facebook.com/p/Harrington-Electrical-Data-solutions-PTY-LTD-100041373374286/?paipv=0&eav=AfYXZ_muGPErW9aTq6IUgBf5FC4rERAMOfrAINqpWaEO1Edh0lQM3RAtJPYWP3JVY5Q&_rdr" target="_blank"><img src="/images/facebook.svg" alt="Facebook Icon"  class="hover:scale-110 transition-all duration-300 ease-out"></a>
+        </div>
+      </div>
+      <div class="mb-12">
+        <h5 class="mb-4 text-xl">Navigation</h5>
+        <div class="font-thin">
+          <a href="/" class="mb-2 block hover-lines hover:scale-105 transition-all duration-500">Home</a>
+          <a href="/#about-us" class="mb-2 block hover-lines hover:scale-105 transition-all duration-500">About Us</a>
+          <a href="/residential" class="mb-2 block hover-lines hover:scale-105 transition-all duration-500">Residential Electrical Services</a>
+          <a href="/commercial" class="mb-2 block hover-lines hover:scale-105 transition-all duration-500">Commercial Electrical Services</a>
+          <a href="/#contact" class="mb-2 block hover-lines hover:scale-105 transition-all duration-500">Contact</a>
+        </div>
+      </div>
+      <div class="xl:pr-48">
+        <h5 class="mb-4 text-xl">Business Information</h5>
+        <p class="font-thin mb-2">Electrical Licence: REC-28677</p>
+        <p class="font-thin mb-2">ACMA Number: B28065VIC</p>
+        <p class="font-thin mb-2">ABN: 30 647 533 373</p>
+        <p class="font-thin mb-2">24 Hour Emergency Service</p>
+      </div>
+    </div>
+    <div class="mid-footer py-12 border-b border-white border-opacity-40 xl:py-12">
+      <h2 class="mb-4 text-xl">Areas we service</h2>
+      <div class="font-thin grid grid-cols-3 gap-2 xl:grid-cols-5">
+        <h3>Monash</h3>
+        <h3>Melbourne</h3>
+        <h3>Bayside</h3>
+        <h3>Kingston</h3>
+        <h3>Stonnington</h3>
+        <h3>Boroondara</h3>
+        <h3>Yarra</h3>
+        <h3>Casey</h3>
+        <h3>Port Phillip</h3>
+        <h3>Dandenong</h3>
+        <h3>Frankston</h3>
+        <h3>Knox</h3>
+        <h3>Glen Eira</h3>
+        <h3>White Horse</h3>
+        <h3>Maroondah</h3>
+        <h3>Manningham</h3>
+        <h3>Yarra Ranges</h3>
+        <h3>Cardinia</h3>
+      </div>
+    </div>
+    <div class="bottom-footer py-2 font-deco text-sm text-[#77B523] xl:py-6 xl:flex xl:justify-between">
+      <p>© COPYRIGHT HARRINGTON ELECTRICAL & DATA SOLUTIONS PTY LTD 2024. ALL RIGHTS RESERVED.</p><span class="hidden xl:inline-block">Site by <a target="_blank" href="http://www.kurtiskunicreative.com"  class="underline">Kurtis Kuni</a></span>
+    </div>
+    <div class="border-t border-white border-opacity-40 py-2 font-deco text-sm text-[#77B523] xl:hidden">
+      <p class="text-center text-xs">Site by <a class="underline" href="htttp://www.kurtiskunicreative.com" target="_blank">Kurtis Kuni</a></p>
+    </div>
+  </div>
+</footer>
