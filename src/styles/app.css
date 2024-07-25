@@ -13,30 +13,30 @@
 }
 
 .fade-in {
-  opacity: 0;
+  opacity: 0.01;
   transition: 0.5s ease-in-out;
   filter: blur(1px);
 }
 .fade-in-up {
-  opacity: 0;
+  opacity: 0.01;
   transform: translate(0px, 30px);
   filter: blur(1px);
   transition: 600ms ease-in-out;
 }
 .fade-in-left {
-  opacity: 0;
+  opacity: 0.01;
   transform: translate(20%, 0px);
   filter: blur(5px);
   transition: 600ms ease-in-out;
 }
 .fade-in-right {
-  opacity: 0;
+  opacity: 0.01;
   transform: translate(-20%, 0px);
   filter: blur(5px);
   transition: 600ms ease-in-out;
 }
 .clip-in {
-  opacity: 0;
+  opacity: 0.01;
   filter: blur(5px);
   transform: translate(0px, 20px);
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
