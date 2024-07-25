@@ -1,6 +1,6 @@
 
 .nav-hidden {
-transform: translateY(-80px);
+transform: translateY(-80px) !important;
 transition: transform 0.8s ease-in-out; 
 }
 .container {

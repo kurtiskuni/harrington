@@ -1,13 +1,12 @@
 ---
 import { Image } from "astro:assets";
-import logo from '../images/logo1.png';
 import '../styles/nav.css'
 ---
-<header id="header" class='navbar border-2 border-white border-opacity-10 fixed z-20 w-full bg-[#141E05]'>
+<header id="header" class='fade-in navbar border-2 border-white border-opacity-10 fixed z-20 w-full bg-[#141E05]'>
   <div class="mt-0 xl:flex xl:items-center xl:justify-between container m-auto">
     <div class='flex items-center justify-between pt-2 pb-1 xl:w-auto z-20 xl:mr-0 xl:ml-0 relative'>
       <a href="/" class='logo w-36 hover:scale-105 transition-all duration-500 pb-2'>
-        <Image src={logo} alt="" />
+        <img src="../images/logo1.png" alt="">
       </a>
       <button class='menu-button border-2 xl:hidden border-white border-opacity-40 py-[.3rem] px-[1rem] rounded-md text-sm text-white'>Menu</button>
     </div>
