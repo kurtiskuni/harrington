@@ -5,41 +5,41 @@ import '../styles/nav.css'
 <header id="header" class='fade-in navbar border-2 border-white border-opacity-10 fixed z-20 w-full bg-[#141E05]'>
   <div class="mt-0 xl:flex xl:items-center xl:justify-between container m-auto">
     <div class='flex items-center justify-between pt-2 pb-1 xl:w-auto z-20 xl:mr-0 xl:ml-0 relative'>
-      <a href="/" class='logo w-36 hover:scale-105 transition-all duration-500 pb-2'>
-        <img src="../images/logo1.png" alt="">
+      <a href="/" class='logo w-36 hover:scale-105 transition-all duration-500 pb-2' aria-label="Link to Home Page">
+        <img src="../images/logo1.png" alt="Harrington Electrical & Data Solutions Logo">
       </a>
-      <button class='menu-button border-2 xl:hidden border-white border-opacity-40 py-[.3rem] px-[1rem] rounded-md text-sm text-white'>Menu</button>
+      <button class='menu-button border-2 xl:hidden border-white border-opacity-40 py-[.3rem] px-[1rem] rounded-md text-sm text-white' aria-label="Menu button">Menu</button>
     </div>
     <div class='md:w-1/2 lg:w-5/12 bg-[#141E05] xl:bg-inherit w-full top-0 right-0 xl:w-full xl:px-5 xl:px:0 xl:pl-20 xl:pr-0 xl:static xl:top-auto xl:right-auto'>
       <nav class='hidden text-white w-full pt-8 xl:flex xl:h-min h-screen xl:pt-0 xl:mt-0 xl:justify-between xl:items-center'>
         <ul class='font-body border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 flex flex-col xl:flex-row xl:items-center'>
           <div class='nav-links border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 text-white xl:flex'>
             <li class="menu-item">
-              <a href='/' class="py-4 border-b xl:border-none border-[#FFFFFF] border-opacity-20 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center">
+              <a href='/' class="py-4 border-b xl:border-none border-[#FFFFFF] border-opacity-20 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center" aria-label="Home page link">
                 <h3 class="hover-lines hover:scale-105 duration-500">Home</h3>
                 <img class='w-3 xl:hidden xl:ml-2 xl:pt-1' src="/images/arrow-right-solid.svg" alt="Toggle" />
               </a>
             </li>
             <li class="menu-item">
-              <a href='/#about-us' class="internal-link border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 py-4 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center">
+              <a href='/#about-us' class="internal-link border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 py-4 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center" aria-label="Link to about section">
                 <h3 class="hover-lines hover:scale-105 duration-500">About Us</h3>
                 <img class='w-3 xl:hidden xl:ml-2 xl:pt-1' src="/images/arrow-right-solid.svg" alt="Toggle" />
               </a>
             </li>
             <li class="menu-item">
-              <a href='/residential' class="py-4 border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center">
+              <a href='/residential' class="py-4 border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center" aria-label="Link to Residential Page">
                 <h3 class="hover-lines hover:scale-105 duration-500">Residential</h3>
                 <img class='w-3 xl:hidden xl:ml-2 xl:pt-1' src="/images/arrow-right-solid.svg" alt="Toggle" />
               </a>
             </li>
             <li class="menu-item">
-              <a href='/commercial' class="py-4 border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center">
+              <a href='/commercial' class="py-4 border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center" aria-label="Link to Commercial page">
                 <h3 class="hover-lines hover:scale-105 duration-500">Commercial</h3>
                 <img class='w-3 xl:hidden xl:ml-2 xl:pt-1' src="/images/arrow-right-solid.svg" alt="Toggle" />
               </a>
             </li>
             <li class="menu-item">
-              <a href='/#contact' class="internal-link py-4 border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center">
+              <a href='/#contact' class="internal-link py-4 border-b border-t xl:border-none border-[#FFFFFF] border-opacity-20 font-light w-full flex justify-between xl:justify-normal xl:mr-14 text-base items-center" aria-label="Link to Contact section">
                 <h3 class="hover-lines hover:scale-105 duration-500">Contact</h3>
                 <img class='w-3 xl:hidden xl:ml-2 xl:pt-1' src="/images/arrow-right-solid.svg" alt="Toggle" />
               </a>
@@ -65,15 +65,15 @@ import '../styles/nav.css'
         </ul>
         <ul class='hidden xl:flex flex-col xl:flex-row xl:items-center'>
           <h3 class="font-deco text-sm font-light text-[#77B523] mr-6">Available 24/7</h3><img class='w-3 xl:hidden' src="/images/arrow-right-solid.svg"></img>
-          <a class="hover:bg-[#77B523] hover:text-white hover:scale-[1.02] transition-all py-5 border-b sm:border-none border-[#FFFFFF] border-opacity-20 flex justify-between xl:border-white xl:border-2 xl:border-opacity-40 xl:border-solid xl:py-2 xl:px-4 xl:my: xl:rounded-md auto text-white hover:wiggle" href="tel:+61425 685 486"><img class="pr-2 phone" src="/images/phone.svg" alt="phone icon"><h3 class="text-sm font-body text-light">0425 685 486</h3><img class='w-3 xl:hidden fill-white' src="/images/up-right-from-square-solid.svg"></img></a>
+          <a class="hover:bg-[#77B523] hover:text-white hover:scale-[1.02] transition-all py-5 border-b sm:border-none border-[#FFFFFF] border-opacity-20 flex justify-between xl:border-white xl:border-2 xl:border-opacity-40 xl:border-solid xl:py-2 xl:px-4 xl:my: xl:rounded-md auto text-white hover:wiggle" href="tel:+61425 685 486"><img class="pr-2 phone" src="/images/phone.svg" alt="phone icon" aria-label="Link to call business"><h3 class="text-sm font-body text-light">0425 685 486</h3><img class='w-3 xl:hidden fill-white' src="/images/up-right-from-square-solid.svg"></img></a>
         </ul>
         <div class="text-[#77B523] text-sm font-deco mt-20 xl:hidden">
           <p class="mb-6 w-[80%]"> Oakleigh South VIC 3167</p>
           <div class="mb-6">
-            <a href="tel:+61425 685 486" class="block">P: +61425 685 486</a>
-            <a href="mailto:info@harringtonelecdata.com">E: info@harringtonelecdata.com</a>
+            <a href="tel:+61425 685 486" class="block" aria-label="Link to call business">P: +61425 685 486</a>
+            <a href="mailto:info@harringtonelecdata.com" aria-label="Link to email business">E: info@harringtonelecdata.com</a>
           </div>
-          <a href="https://www.facebook.com/p/Harrington-Electrical-Data-solutions-PTY-LTD-100041373374286/?paipv=0&eav=AfYXZ_muGPErW9aTq6IUgBf5FC4rERAMOfrAINqpWaEO1Edh0lQM3RAtJPYWP3JVY5Q&_rdr" target="_blank"><img src="/images/facebook.svg" alt="Facebook Icon"  class="hover:scale-110 transition-all duration-300 ease-out"></a>
+          <a href="https://www.facebook.com/p/Harrington-Electrical-Data-solutions-PTY-LTD-100041373374286/?paipv=0&eav=AfYXZ_muGPErW9aTq6IUgBf5FC4rERAMOfrAINqpWaEO1Edh0lQM3RAtJPYWP3JVY5Q&_rdr" target="_blank" aria-label="Link to business Facebook Page"><img src="/images/facebook.svg" alt="Facebook Icon"  class="hover:scale-110 transition-all duration-300 ease-out"></a>
         </div>
       </div>
       </nav>
