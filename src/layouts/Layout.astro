@@ -52,22 +52,4 @@ interface Props {
     <script src="../script.ts"></script>
     <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> 
 
-    <script>
-      // Smooth Scroll
-
-      // Assuming Lenis is correctly imported or defined somewhere
-      const lenis = new Lenis();
-
-      lenis.on('scroll', (e: Event) => {
-        console.log(e);
-      });
-
-      function raf(time: DOMHighResTimeStamp) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-
-    </script>
   </html>
