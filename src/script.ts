@@ -1,6 +1,19 @@
+// Smooth Scroll
 
+const lenis = new Lenis()
 
-document.addEventListener('DOMContentLoaded', () => {
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+document.addEventListener('astro:after-load', () => {
     // Utility
     const lerp = (current: number, target: number, factor: number): number => {
       return current * (1 - factor) + target * factor;

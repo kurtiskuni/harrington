@@ -17,6 +17,7 @@ interface Props {
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- <ViewTransitions /> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description}>
@@ -38,7 +39,6 @@ interface Props {
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- <ViewTransitions /> -->
     <title>{SITE_TITLE} - {title}</title>
   </head>
   <body class="">
@@ -49,4 +49,6 @@ interface Props {
     </div>
     <Footer />
     </body>
+    <script src="../script.ts"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> 
   </html>
